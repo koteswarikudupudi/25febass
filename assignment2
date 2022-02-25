@@ -1,0 +1,27 @@
+# to remove 0 elements fom the list and
+#find the total count of non zero elements and displaying them
+l=[]
+t=[]
+n=int(input())
+for i in range(n):
+    x=int(input())
+    l.append(x)
+print(l)
+c=0
+for i in range(n):
+    if l[i]!=0:
+        t.append(l[i])
+        c=c+1
+print('no of non zero elements are:',c)
+print(t)
+'''
+output:
+5
+0
+5
+0
+4
+-4
+[0, 5, 0, 4, -4]
+no of non zero elements are: 3
+[5, 4, -4]    '''
